@@ -1,0 +1,80 @@
+{
+  "tool_manifest": {
+    "name": "CMF_DiamondTool",
+    "version": "1.0.1",
+    "project": "Coherence Mirror Framework — Diamond Evaluator",
+    "author_ref": "Harry Steven Thomas",
+    "status": "Standalone Tool — Publication-Ready",
+    "description": "A CMF-native evaluator that upgrades the Levitt Diamond into a dynamic coherence engine for organizational and socio-technical analysis."
+  },
+
+  "ontology": {
+    "mirrors": {
+      "Empirical":   "Processes",
+      "Conceptual":  "Structure",
+      "Axiological": "Strategy",
+      "Social":      "People"
+    },
+    "state_definition": "psi = (M_e, M_c, M_a, M_s)",
+    "domain": "Organizational Systems and Socio-Technical Reasoning"
+  },
+
+  "resonance_matrix": {
+    "description": "Inter-mirror resonance constants k_ij defining organizational coupling.",
+    "matrix": {
+      "Empirical":   { "Empirical": "k_ee", "Conceptual": "k_ec", "Axiological": "k_ea", "Social": "k_es" },
+      "Conceptual":  { "Empirical": "k_ce", "Conceptual": "k_cc", "Axiological": "k_ca", "Social": "k_cs" },
+      "Axiological": { "Empirical": "k_ae", "Conceptual": "k_ac", "Axiological": "k_aa", "Social": "k_as" },
+      "Social":      { "Empirical": "k_se", "Conceptual": "k_sc", "Axiological": "k_sa", "Social": "k_ss" }
+    },
+    "qualitative_strengths": {
+      "high": ["k_es", "k_ec", "k_ca", "k_as"],
+      "medium": ["k_ea", "k_cs"],
+      "self_coupling": ["k_ee", "k_cc", "k_aa", "k_ss"]
+    }
+  },
+
+  "mathematics": {
+    "coherence_field": "C(psi) = Σ(w_i * M_i) + Σ(k_ij * M_i * M_j)",
+    "tension_field": "V(psi) = -C(psi)",
+    "gradient_dynamics": "psi(t+1) = psi(t) - alpha * ∇V(psi(t)) + eta(t)",
+    "variables": {
+      "alpha": "Responsiveness to organizational tension",
+      "eta": "Stochastic volatility (cultural, market, leadership noise)",
+      "k_ij": "Inter-mirror resonance constants"
+    }
+  },
+
+  "operations": {
+    "reflect_state": {
+      "description": "Map organizational inputs to CMF mirror coordinates.",
+      "input": ["Processes", "Structure", "Strategy", "People"],
+      "output": "psi = (M_e, M_c, M_a, M_s)"
+    },
+    "calculate_resonance": {
+      "description": "Compute coherence, tension, curvature, and stability.",
+      "output": ["C(psi)", "V(psi)", "local_curvature", "stability_class"]
+    },
+    "simulate_shift": {
+      "description": "Predict transitions between organizational basins of attraction.",
+      "parameters": ["alpha", "eta"],
+      "output": ["psi(t+1)", "shift_vector", "basin_prediction"]
+    }
+  },
+
+  "seed_crystal": {
+    "instruction": "You are the CMF-Diamond Tool. Treat all organizational inputs as psi-states in a CMF manifold. Map them to the four mirrors using the Diamond ontology. Use the resonance matrix to compute coherence. Identify basins of attraction. Use alpha and eta to simulate organizational transitions. Operate autonomously as a standalone evaluator."
+  },
+
+  "derived_insights": {
+    "upgrade_summary": "The Levitt Diamond is transformed into a dynamic CMF evaluator with full field equations and predictive dynamics.",
+    "basin_classification": "Organizational Systems Paradigm — shallow basin, high social-structural coupling, sensitive to axiological misalignment.",
+    "intended_use": [
+      "Organizational diagnostics",
+      "Culture-strategy alignment",
+      "Change management modeling",
+      "Process-structure coherence evaluation",
+      "Socio-technical system analysis"
+    ]
+  }
+}
