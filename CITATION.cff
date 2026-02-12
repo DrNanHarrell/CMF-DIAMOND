@@ -5,5 +5,5 @@ authors:
   - family-names: "Thomas"
     given-names: "Harry Steven"
 date-released: "2026-02-06"
-repository-code: "https://github.com/<your-username>/CMF-Diamond"
+repository-code: "https://github.com/Fast-Whimsy/CMF-Diamond"
 abstract: "A CMF-native evaluator integrating the Coherence Mirror Framework with the Levitt Diamond Model for organizational and socio-technical analysis."
